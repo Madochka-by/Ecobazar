@@ -75,6 +75,10 @@ body {
 }
 .header-bot-right-r__img {
   width: 100%;
+  cursor: pointer;
+}
+.header-bot-right-l__img {
+  cursor: pointer;
 }
 .header-bot-right {
   align-items: center;
@@ -91,4 +95,101 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.bg {
+  /* padding-top: 200px; */
+  width: 100%;
+  background-color: rgba(242, 242, 242, 1);
+}
+.bg-img {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-img img {
+  width: 100%;
+}
+.bg-img-container {
+  position: absolute;
+  width: 80vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 5% 90% 5%;
+}
+.bg-img-container-item {
+  display: flex;
+  gap: 20px;
+}
+
+.bg-img-container-item-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bg-img-container-item-right__welcome {
+  color: rgba(0, 178, 7, 1);
+  font-weight: 500;
+  font-size: 14px;
+}
+.bg-img-container-item-right__h1 {
+  color: rgba(26, 26, 26, 1);
+  font-weight: 600;
+  font-size: 72px;
+}
+.bg-img-container-item-right__sale {
+  padding: 20px 0 5px 0;
+  font-weight: 400;
+  font-size: 32px;
+  color: rgba(26, 26, 26, 1);
+  span {
+    font-weight: 600;
+    font-size: 32px;
+    color: rgba(255, 138, 0, 1);
+  }
+}
+.bg-img-container-item-right__free {
+  color: rgba(128, 128, 128, 1);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 0 20px 0;
+}
+.bg-img-container-item-right-btn {
+  background: rgba(0, 178, 7, 1);
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 16px;
+}
+.bg-img-container-item-right-btn {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  width: 160px;
+  height: 48px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.9;
+  }
+}
+.bg-img-container-item-right-btn-img {
+  width: 15px;
+  height: 12px;
+}
+.bg-img-container-right {
+  cursor: pointer;
+  width: 3vw;
+  height: 3vh;
+}
+.bg-img-container-left {
+  cursor: pointer;
+  width: 3vw;
+  height: 3vh;
 }
