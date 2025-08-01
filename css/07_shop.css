@@ -1,12 +1,13 @@
 body {
   font-family: Poppins;
 }
+
 .margin1 {
   .margin1-small {
     display: flex;
     justify-content: space-between;
     background: #333333;
-    padding: 2vh 10vw;
+    padding: 10px 14vw;
     color: #b3b3b3;
     font-weight: 400;
     font-size: 12px;
@@ -44,5 +45,345 @@ body {
     .margin1-small-links-change__text:hover {
       color: #d5d3d3;
     }
+  }
+  .margin1-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 25px 14vw;
+    box-shadow: 0px -1px 0px 0px #e5e5e5 inset;
+    .margin1-middle-frame__img {
+      width: 100%;
+    }
+    .margin1-middle-search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .margin1-middle-search__inp {
+      width: 500px;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      padding: 10px 40px;
+      font-size: 14px;
+    }
+    .margin1-middle-search-frame {
+      position: absolute;
+      left: 10px;
+    }
+    .margin1-middle-search__btn {
+      position: absolute;
+      right: 0;
+      background: #00b207;
+      height: 45px;
+      width: 98px;
+      border-radius: 0 5px 5px 0;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+      &:hover {
+        background: #2c742f;
+      }
+    }
+    .margin1-middle-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      hr {
+        background: #cccccc;
+        width: 24px;
+        height: 1px;
+        rotate: -90deg;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+    .margin1-middle-icons-shopping {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .margin1-middle-icons-shopping-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .margin1-middle-icons-shopping-info__text {
+      color: #4d4d4d;
+      font-weight: 400;
+      font-size: 11px;
+    }
+    .margin1-middle-icons-shopping-info__price {
+      color: #1a1a1a;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+  .margin1-navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 14vw;
+    .margin1-navlinks-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .margin1-navlinks-links-ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+    }
+    .margin1-navlinks-links-ul-li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      color: #666666;
+      font-weight: 500;
+      font-size: 14px;
+      &:hover {
+        color: #00b207;
+        .margin1-navlinks-links-ul-li__img {
+          background-image: url("/img/chevronDownHover.png");
+        }
+      }
+    }
+    .margin1-navlinks-links-ul-li__img {
+      background-image: url("/img/chevronDown.png");
+      width: 16px;
+      height: 16px;
+    }
+    .margin1-navlinks-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #1a1a1a;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .margin1-navlinks-call-frame__img {
+      width: 100%;
+    }
+  }
+}
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 14vw;
+  background: linear-gradient(
+    90.02deg,
+    rgba(0, 0, 0, 0.7) 0.03%,
+    rgba(0, 0, 0, 0) 91.31%
+  );
+  background-image: url("/img/BGBreadcrumbs.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .breadcrumbs-location {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999999;
+    span {
+      color: #00b207;
+    }
+  }
+  .breadcrumbs-location__imgchevron {
+    rotate: -90deg;
+  }
+}
+.subscribe {
+  padding: 45px 14vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+
+  .subscribe-frameleft {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h1 {
+      color: #1a1a1a;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    p {
+      color: #999999;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+  .subscribe-frameright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .subscribe-frameright-framemiddle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* margin-left: 200px; */
+  }
+  .subscribe-frameright-framemiddle__inp {
+    border: 1px solid #e5e5e5;
+    border-radius: 50px;
+    width: 536px;
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  .subscribe-frameright-framemiddle__btn {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    background: #00b207;
+    height: 55px;
+    width: 160px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50px;
+    &:hover {
+      background: #2c742f;
+    }
+  }
+  .subscribe-frameright-frameright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .subscribe-frameright-frameright__imgf {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url("/img/Media=Facebook\,\ Status=\ False.png");
+    &:hover {
+      background-image: url("/img/Media=Facebook\,\ Status=\ True.png");
+    }
+  }
+  .subscribe-frameright-frameright__imgt {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url("/img/Media=Twitter\,\ Status=\ False.png");
+    &:hover {
+      background-image: url("/img/Media=Facebook\,\ Status=\ True.png");
+    }
+  }
+  .subscribe-frameright-frameright__imgp {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url("/img/Media=Pinterest\,\ Status=\ False.png");
+    &:hover {
+      background-image: url("/img/Media=Facebook\,\ Status=\ True.png");
+    }
+  }
+  .subscribe-frameright-frameright__imgi {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url("/img/Media=Instagram\,\ Status=\ False.png");
+    &:hover {
+      background-image: url("/img/Media=Facebook\,\ Status=\ True.png");
+    }
+  }
+}
+.footer {
+  padding: 0 14vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #1a1a1a;
+  color: #808080;
+  font-weight: 400;
+  font-size: 14px;
+
+  .footer-fotter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 0;
+  }
+  .footer-fotter-company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    p {
+      line-height: 150%;
+    }
+  }
+  .footer-fotter-company-frame__img {
+    width: 100%;
+  }
+  .footer-fotter-company-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    p {
+      box-shadow: 0px 1.5px 0px 0px #20b526;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 250%;
+    }
+  }
+  .footer-fotter-lists {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+    gap: 7.5vw;
+    align-items: center;
+    h1 {
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+  }
+  .footer-fotter-lists-item {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    li:hover {
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  .footer-copyright {
+    padding: 20px 0;
+    box-shadow: 0px -1px 0px 0px #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      cursor: pointer;
+    }
+  }
+  .footer-copyright-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
 }
