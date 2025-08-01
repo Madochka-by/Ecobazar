@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(updateCountdown, 1000);
 });
 
+/////////////////////////////////////////////////////////////////////////
 const nextBlogBtn = document.getElementById("nextBlog");
 const prevBlogBtn = document.getElementById("prevBlog");
 const sliderBlog = document.querySelector(".margin7-wrapper-slider");
@@ -148,15 +149,20 @@ prevBlogBtn.onmouseout = () => {
 };
 
 nextBlogBtn.addEventListener("click", () => {
-  indexOfCardBlog = (indexOfCardBlog + 1) % wrapperBlog;
+  if (indexOfCardBlog < wrapperBlog - 3) indexOfCardBlog++;
+  else indexOfCardBlog = 0;
+
   rewind();
 });
 
 prevBlogBtn.addEventListener("click", () => {
-  indexOfCardBlog = (indexOfCardBlog - 1 + wrapperBlog) % wrapperBlog;
+  if (indexOfCardBlog > 0) indexOfCardBlog--;
+  else indexOfCardBlog = wrapperBlog - 3;
+
   rewind();
 });
 
+//////////////////////////////////////////////////////////////////////////////
 const arrWithActiveSrc = [
   "/img/stepsActive.png",
   "/img/mangoActive.png",

@@ -1,0 +1,48 @@
+body {
+  font-family: Poppins;
+}
+.margin1 {
+  .margin1-small {
+    display: flex;
+    justify-content: space-between;
+    background: #333333;
+    padding: 2vh 10vw;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-size: 12px;
+    .margin1-small-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .margin1-small-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      hr {
+        width: 15px;
+        height: 1px;
+        background: #b3b3b3;
+        rotate: -90deg;
+      }
+    }
+    .margin1-small-links-change {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      span {
+        cursor: default;
+      }
+    }
+    #language,
+    #price,
+    .margin1-small-links-change__text,
+    .margin1-small-links-change__img {
+      cursor: pointer;
+    }
+    .margin1-small-links-change__text:hover {
+      color: #d5d3d3;
+    }
+  }
+}
