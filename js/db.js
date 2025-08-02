@@ -24,6 +24,7 @@ fetch(URL)
 
 function toHTMLFeautered(name, price, img, rating) {
   let string = ` <div class="margin-featureblock-goods-cards-frame">
+  
               <div class="margin-featureblock-goods-cards-frame-hover">
                 <img src="/img/Add To wishlist.png" alt="" class="margin-featureblock-goods-cards-frame-hover__wishlist">
                 <img src="/img/Quick View.png" alt="" class="margin-featureblock-goods-cards-frame-hover__view">
