@@ -3,9 +3,18 @@ const productRating = document.querySelectorAll(
   ".product-container-items-prod-card-info-left-rating"
 );
 const countOfProduct = document.getElementById("count");
+
 const URL = "https://ecobazardb-default-rtdb.firebaseio.com/CATALOG.json";
 
+const inputSearch = document.querySelector(".margin1-middle-search__inp");
+const buttonSerach = document.querySelector(".margin1-middle-search__btn");
+
+const productFilterButton = document.querySelector(".product-top-btn");
+
 let counterOfCardProduct = 0;
+
+let DATA = [];
+let KEYS = [];
 
 async function DataParsing() {
   productFrame.innerHTML = "loading...";
@@ -13,24 +22,47 @@ async function DataParsing() {
     const response = await fetch(URL);
     const data = await response.json();
     productFrame.innerHTML = "";
+    DATA = data;
+    KEYS = Object.keys(data);
     return data;
   } catch (err) {
-    productFrame.innerHTML = "Ошибка";
+    productFrame.innerHTML = `Ошибка: ${err}`;
   }
 }
 
 async function categorization() {
   const data = await DataParsing();
-  const keys = Object.keys(data);
-  keys.forEach((Element) => {
+  KEYS.forEach((Element) => {
     data[Element].forEach((fields) => {
       const { img, name, price, rating, sale, stock } = fields;
-      console.log(typeof fields);
       toHTML(img, name, price, rating, sale, stock);
     });
   });
 }
 categorization();
+
+const filteredByInputValue = (value) => {
+  productFrame.innerHTML = "";
+  counterOfCardProduct = 0;
+  KEYS.forEach((Element) => {
+    DATA[Element].forEach((fields) => {
+      if (fields.name.toLowerCase().includes(value.toLowerCase().trim())) {
+        const { img, name, price, rating, sale, stock } = fields;
+        toHTML(img, name, price, rating, sale, stock);
+      }
+    });
+  });
+};
+
+buttonSerach.addEventListener("click", () => {
+  filteredByInputValue(inputSearch.value);
+});
+
+inputSearch.addEventListener("input", () => {
+  if (inputSearch.value == "") {
+    filteredByInputValue(inputSearch.value);
+  }
+});
 
 function renderRating(rating) {
   let stars = "";
@@ -73,7 +105,6 @@ function toHTML(img, name, price, rating, sale, stock) {
                   <p class="product-container-items-prod-card-info-left__name">${name}</p>
                   <p class="product-container-items-prod-card-info-left__price">${price}</p>
                   <div class="product-container-items-prod-card-info-left-rating">
-                    
                     ${renderRating(rating)}
                   </div>
                 </div>
