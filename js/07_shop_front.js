@@ -6,12 +6,17 @@ let click = 0;
 
 filterBtn.addEventListener("click", () => {
   if (click == 0) {
-    productCardGrid.style.gridTemplateColumns = "repeat(3, 25%)";
+    if (window.innerWidth <= 1920) {
+      productCardGrid.style.gridTemplateColumns = "repeat(3, 1fr)";
+    }
     filterMenu.style.display = "flex";
     click++;
   } else {
     filterMenu.style.display = "none";
-    productCardGrid.style.gridTemplateColumns = "repeat(4, 1fr)";
+    if (window.innerWidth <= 1920) {
+      productCardGrid.style.gridTemplateColumns = "repeat(4, 1fr)";
+    }
     click = 0;
   }
 });
+console.log(window.innerWidth);

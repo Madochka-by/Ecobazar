@@ -1,0 +1,201 @@
+.overlay {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 12;
+}
+.overlay > *:not(.overlay-modal) {
+  filter: none;
+}
+#orangeSpan {
+  color: #ff8a00;
+}
+.overlay-modal {
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.overlay-modal-BLOCK {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+.overlay-modal-exit {
+  display: flex;
+  justify-content: flex-end;
+  img {
+    cursor: pointer;
+  }
+}
+.overlay-modal-frame {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+  border-radius: 5px;
+}
+.overlay-modal-frame-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay-modal-frame-left__image {
+  width: 100%;
+}
+.overlay-modal-frame-right {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  hr {
+    background: #e5e5e5;
+    width: 100%;
+    height: 1px;
+  }
+}
+.overlay-modal-frame-right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.overlay-modal-frame-right-block-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  h1 {
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 36px;
+  }
+}
+.overlay-modal-frame-right-block-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  #point {
+    padding: 0 10px;
+    color: #666666;
+  }
+  span {
+    color: #cccccc;
+  }
+  .span {
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+  }
+}
+.overlay-modal-frame-right-block-rating__stars {
+  font-size: 18px;
+}
+.overlay-modal-frame-right-block-price {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #2c742f;
+}
+.overlay-modal-frame-right-block-top {
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #808080;
+  }
+}
+.overlay-modal-frame-right-block-top-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.overlay-modal-frame-right-block-top-right {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.overlay-modal-frame-right-block-top-right-share__imgf {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("/img/Media=Facebook\,\ Status=\ False.png");
+  &:hover {
+    background-image: url("/img/Media=Facebook\,\ Status=\ True.png");
+  }
+}
+.overlay-modal-frame-right-block-top-right-share__imgt {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("/img/Media=Twitter\,\ Status=\ False.png");
+  &:hover {
+    background-image: url("/img/Media=Twitter\,\ Status=\ True.png");
+  }
+}
+.overlay-modal-frame-right-block-top-right-share__imgp {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("/img/Media=Pinterest\,\ Status=\ False.png");
+  &:hover {
+    background-image: url("/img/Media=Pinterest\,\ Status=\ True.png");
+  }
+}
+.overlay-modal-frame-right-block-top-right-share__imgi {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("/img/Media=Instagram\,\ Status=\ False.png");
+  &:hover {
+    background-image: url("/img/Media=Instagram\,\ Status=\ True.png");
+  }
+}
+.overlay-modal-frame-right-block-top-right-share {
+  display: flex;
+  gap: 5px;
+}
+.overlay-modal-frame-right-block-bot {
+  font-weight: 400;
+  font-size: 14px;
+  color: #808080;
+  line-height: 150%;
+  text-align: justify;
+}
+.overlay-modal-frame-right-block-inputs {
+  display: flex;
+  justify-content: space-between;
+  img {
+    cursor: pointer;
+  }
+}
+.overlay-modal-frame-right-block-inputs-add {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50px;
+  padding: 10px;
+}
+.overlay-modal-frame-right-block-inputs-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 368px;
+  margin: 0 15px;
+  background: #00b207;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}

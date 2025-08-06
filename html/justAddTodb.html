@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <button class="btn">add</button> -->
+    <button class="btn">add</button>
     <!-- <img src="/img/Surjapuri Mango.png" alt="" /> -->
     <div class="product">
       <div class="product-top">
@@ -48,86 +48,350 @@
       </div>
     </div>
     <script>
-      const productFrame = document.querySelector(
-        ".product-container-items-prod"
-      );
-      const productRating = document.querySelectorAll(
-        ".product-container-items-prod-card-info-left-rating"
-      );
-      const URL = "https://ecobazardb-default-rtdb.firebaseio.com/CATALOG.json";
-
-      async function DataParsing() {
-        const response = await fetch(URL);
-        const data = await response.json();
-        return data;
-      }
-
-      async function categorization() {
-        const data = await DataParsing();
-        const keys = Object.keys(data);
-        keys.forEach((Element) => {
-          data[Element].forEach((fields) => {
-            const { img, name, price, rating, sale, stock } = fields;
-            console.log(typeof fields);
-            toHTML(img, name, price, rating, sale, stock);
-          });
+      document.querySelector(".btn").addEventListener("click", () => {
+        fetch("https://ecobazardb-default-rtdb.firebaseio.com/.json", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            CATALOG: {
+              fruit: [
+                {
+                  img: "/img/Green Apple.png",
+                  name: "Green Apple",
+                  price: 14.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+                {
+                  img: "/img/Surjapuri Mango.png",
+                  name: "Fresh Mango",
+                  price: 11.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Fresh Orange.webp",
+                  name: "Red Strawberry",
+                  price: 14.99,
+                  rating: 4,
+                  sale: false,
+                  stock: true,
+                },
+                {
+                  img: "/img/Surjapuri Mango.png",
+                  name: "Fresh Banana",
+                  price: 11.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Fresh Orange.webp",
+                  name: "Fresh Indian Malta",
+                  price: 14.99,
+                  rating: 3,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Green Apple.png",
+                  name: "Coconut",
+                  price: 11.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+              ],
+              vegetables: [
+                {
+                  img: "/img/Big Potatos.png",
+                  name: "Big Potatos",
+                  price: 5.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Chanise Cabbage.png",
+                  name: "Chanise Cabbage",
+                  price: 2.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Ladies Finger.png",
+                  name: "Ladies Finger",
+                  price: 20.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Eggplant.png",
+                  name: "Eggplant",
+                  price: 15.99,
+                  rating: 4,
+                  sale: false,
+                  stock: true,
+                },
+                {
+                  img: "/img/Fresh Cauliflower.png",
+                  name: "Fresh Cauliflower",
+                  price: 147.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+                {
+                  img: "/img/Green Capsicum.png",
+                  name: "Green Capsicum",
+                  price: 14.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Green Chili.png",
+                  name: "Green Chili",
+                  price: 81.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Green Cucumber.png",
+                  name: "Green Cucumber",
+                  price: 17.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Red Tomato.png",
+                  name: "Red Tomato",
+                  price: 1.99,
+                  rating: 5,
+                  sale: true,
+                  stock: false,
+                },
+                {
+                  img: "/img/Red Capsicum.png",
+                  name: "Red Capsicum",
+                  price: 25.99,
+                  rating: 3,
+                  sale: false,
+                  stock: false,
+                },
+              ],
+              fish: [
+                {
+                  img: "/img/Big Potatos.png",
+                  name: "Norway redfish",
+                  price: 22.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+                {
+                  img: "/img/Chanise Cabbage.png",
+                  name: "Walleye",
+                  price: 14.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Ladies Finger.png",
+                  name: "Pike",
+                  price: 28.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Eggplant.png",
+                  name: "Smallmouth bass",
+                  price: 15.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Fresh Cauliflower.png",
+                  name: "Bullhead",
+                  price: 27.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+              ],
+              meat: [
+                {
+                  img: "/img/Big Potatos.png",
+                  name: "Pork",
+                  price: 45.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+                {
+                  img: "/img/Chanise Cabbage.png",
+                  name: "Chicken",
+                  price: 74.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Ladies Finger.png",
+                  name: "Rabbit's meat",
+                  price: 16.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Eggplant.png",
+                  name: "Ham",
+                  price: 9.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Fresh Cauliflower.png",
+                  name: "Veal",
+                  price: 24.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+              ],
+              drinks: [
+                {
+                  img: "/img/Surjapuri Mango.png",
+                  name: "Water",
+                  price: 5.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+                {
+                  img: "/img/Chanise Cabbage.png",
+                  name: "Orange juice",
+                  price: 7.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Ladies Finger.png",
+                  name: "Coca-Cola",
+                  price: 6.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Eggplant.png",
+                  name: "Pepsi",
+                  price: 19.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Green Apple.png",
+                  name: "Rosinka",
+                  price: 12.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Red Capsicum.png",
+                  name: "Fanta",
+                  price: 14.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Surjapuri Mango.png",
+                  name: "Kvas",
+                  price: 14.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+              ],
+              snack: [
+                {
+                  img: "/img/Red Capsicum.png",
+                  name: "Dried apricots",
+                  price: 15.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+                {
+                  img: "/img/Chanise Cabbage.png",
+                  name: "Dried figs",
+                  price: 17.99,
+                  rating: 5,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Ladies Finger.png",
+                  name: "Raisins",
+                  price: 16.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Eggplant.png",
+                  name: "Prunes",
+                  price: 19.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+                {
+                  img: "/img/Red Capsicum.png",
+                  name: "Dates",
+                  price: 22.99,
+                  rating: 4,
+                  sale: false,
+                  stock: false,
+                },
+                {
+                  img: "/img/Fresh Cauliflower.png",
+                  name: "Dried mango",
+                  price: 51.99,
+                  rating: 4,
+                  sale: false,
+                  stock: true,
+                },
+                {
+                  img: "/img/Fresh Cauliflower.png",
+                  name: "Dried pineapple",
+                  price: 24.99,
+                  rating: 4,
+                  sale: true,
+                  stock: false,
+                },
+              ],
+            },
+          }),
         });
-      }
-      categorization();
-
-      function renderRating(rating) {
-        let stars = "";
-        for (let i = 1; i <= 5; i++) {
-          stars += `<span ${
-            i <= rating ? 'id="orangeSpan"' : ""
-          }>&#x2605</span>`;
-        }
-        return stars;
-      }
-
-      function toHTML(img, name, price, rating, sale, stock) {
-        productFrame.innerHTML += `
-        <div class="product-container-items-prod-card">
-              <div class="product-container-items-prod-card-frame">
-                 <div class="product-container-items-prod-card-frame-properties">
-                 ${
-                   sale == true
-                     ? ` <img src="/img/sale50.png" alt="" class="product-container-items-prod-card-frame-properties__img">`
-                     : ""
-                 }
-                     ${
-                       stock == true
-                         ? ` <img src="/img/out of stock.png" alt="" class="product-container-items-prod-card-frame-properties__img">`
-                         : ""
-                     }
-                </div>
-                <div class="product-container-items-prod-card-frame-hover">
-                  <div class="product-container-items-prod-card-frame-hover-frameheart"></div>
-                  <div class="product-container-items-prod-card-frame-hover-frameview"></div>
-                </div>
-                <img
-                  src="${img}"
-                  alt=""
-                  class="product-container-items-prod-card-frame__img"
-                />
-              </div>
-              <div class="product-container-items-prod-card-info">
-                <div class="product-container-items-prod-card-info-left">
-                  <p class="product-container-items-prod-card-info-left__name">${name}</p>
-                  <p class="product-container-items-prod-card-info-left__price">${price}</p>
-                  <div class="product-container-items-prod-card-info-left-rating">
-                    
-                    ${renderRating(rating)}
-                  </div>
-                </div>
-                <div class="product-container-items-prod-card-info-right">
-                    <div class="product-container-items-prod-card-info-right-frame">
-                    </div>
-                </div>
-              </div>
-            </div>
-        `;
-      }
+      });
     </script>
   </body>
 </html>

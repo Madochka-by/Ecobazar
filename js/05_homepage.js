@@ -213,3 +213,31 @@ imageLogoFooter.forEach((img, i) => {
     img.src = arrWithNonActiveSrcFooter[i];
   });
 });
+
+const paragraphForDropDown = document.querySelectorAll(
+  ".header-bot-frame-left-item__p"
+);
+const dropDown = document.querySelector(".header-bot-frame-left-dropdown");
+const itemForDropDown = document.querySelectorAll(
+  ".header-bot-frame-left-item"
+);
+itemForDropDown.forEach((Element, index) => {
+  Element.addEventListener("mouseover", () => {
+    if (paragraphForDropDown[index].textContent === "Shop") {
+      dropDown.style.display = "flex";
+    }
+  });
+  dropDown.addEventListener("mouseout", () => {
+    dropDown.style.display = "none";
+  });
+});
+
+const listHrefCategories = document.querySelectorAll(
+  ".header-bot-frame-left-dropdown-items-ul-list"
+);
+
+listHrefCategories.forEach((Element) => {
+  Element.addEventListener("click", () => {
+    console.log(Element.textContent);
+  });
+});

@@ -3,7 +3,7 @@ const URL =
 const FeaturedProductsItem = document.querySelector(
   ".margin-featureblock-goods-cards"
 );
-console.log(FeaturedProductsItem);
+// console.log(FeaturedProductsItem);
 fetch(URL)
   .then((response) => response.json())
   .then((response) => {

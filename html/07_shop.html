@@ -6,352 +6,487 @@
     <title>07_shop</title>
     <link rel="stylesheet" href="/css/07_shop.css" />
     <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/modalWindow.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="/js/07_shop.js" defer></script>
-    <script src="/js/07_shop_front.js" defer></script>
+    <script type="module" src="/js/07_shop.js" defer></script>
+    <script type="module" src="/js/07_shop_front.js" defer></script>
+    <script src="/js/linkTo.js" defer></script>
   </head>
   <body>
-    <div class="margin1">
-      <div class="margin1-small">
-        <div class="margin1-small-contact">
-          <div class="margin1-small-contact-frame">
-            <img
-              src="/img/Map PinGrey.png"
-              alt=""
-              class="margin1-small-contact-frame__img"
-            />
-          </div>
-          <p class="margin1-small-contact__text">
-            Store Location: Lincoln- 344, Illinois, Chicago, USA
-          </p>
-        </div>
-        <div class="margin1-small-links">
-          <div id="language" class="margin1-small-links-change">
-            <p class="margin1-small-links-change__text">Eng</p>
-            <img
-              src="/img/arrowNavigation.png"
-              alt=""
-              class="margin1-small-links-change__img"
-            />
-          </div>
-          <div id="price" class="margin1-small-links-change">
-            <p class="margin1-small-links-change__text">USD</p>
-            <img
-              src="/img/arrowNavigation.png"
-              alt=""
-              class="margin1-small-links-change__img"
-            />
-          </div>
-          <hr />
-          <div class="margin1-small-links-change">
-            <p class="margin1-small-links-change__text">Sign In</p>
-            <span>/</span>
-            <p class="margin1-small-links-change__text">Sign Up</p>
-          </div>
-        </div>
-      </div>
-      <div class="margin1-middle">
-        <div class="margin1-middle-frame">
-          <img src="/img/Logo.png" alt="" class="margin1-middle-frame__img" />
-        </div>
-        <div class="margin1-middle-search">
-          <div class="margin1-middle-search-frame">
-            <img
-              src="/img/SearchBlack.png"
-              alt=""
-              class="margin1-middle-search-frame__img"
-            />
-          </div>
-          <input
-            type="text"
-            class="margin1-middle-search__inp"
-            placeholder="Search"
-          />
-          <input
-            value="Search"
-            type="submit"
-            class="margin1-middle-search__btn"
-          />
-        </div>
-        <div class="margin1-middle-icons">
-          <div class="margin1-middle-icons-frame">
-            <img
-              src="/img/Heart.png"
-              alt=""
-              class="margin1-middle-icons-frame__img"
-            />
-          </div>
-          <hr />
-          <div class="margin1-middle-icons-shopping">
-            <img
-              src="/img/Bag.png"
-              alt=""
-              class="margin1-middle-icons-shopping__img"
-            />
-            <div class="margin1-middle-icons-shopping-info">
-              <p class="margin1-middle-icons-shopping-info__text">
-                Shopping cart
-              </p>
-              <p class="margin1-middle-icons-shopping-info__price">$00.00</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="margin1-navlinks">
-        <div class="margin1-navlinks-links">
-          <ul class="margin1-navlinks-links-ul">
-            <li class="margin1-navlinks-links-ul-li">
-              Home
-              <div class="margin1-navlinks-links-ul-li__img"></div>
-            </li>
-            <li class="margin1-navlinks-links-ul-li">
-              Shop
-              <div class="margin1-navlinks-links-ul-li__img"></div>
-            </li>
-            <li class="margin1-navlinks-links-ul-li">
-              Pages
-              <div class="margin1-navlinks-links-ul-li__img"></div>
-            </li>
-            <li class="margin1-navlinks-links-ul-li">
-              Blog
-              <div class="margin1-navlinks-links-ul-li__img"></div>
-            </li>
-            <li class="margin1-navlinks-links-ul-li">About Us</li>
-            <li class="margin1-navlinks-links-ul-li">Contact Us</li>
-          </ul>
-        </div>
-        <div class="margin1-navlinks-call">
-          <div class="margin1-navlinks-call-frame">
-            <img
-              src="/img/PhoneCall 1.png"
-              alt=""
-              class="margin1-navlinks-call-frame__img"
-            />
-          </div>
-          <p class="margin1-navlinks-call__text">(219) 555-0114</p>
-        </div>
-      </div>
-    </div>
-    <div class="breadcrumbs">
-      <div class="breadcrumbs-location">
-        <img src="/img/home.png" alt="" class="breadcrumbs-location__img" />
-        <img
-          src="/img/chevronDown.png"
-          alt=""
-          class="breadcrumbs-location__imgchevron"
-        />
-        Categories
-        <img
-          src="/img/chevronDown.png"
-          alt=""
-          class="breadcrumbs-location__imgchevron"
-        />
-        <span>Vegetables</span>
-      </div>
-    </div>
-    <div class="product">
-      <div class="product-top">
-        <div class="product-top-btn">
-          <p class="product-top-btn__text">Filter</p>
-          <img src="/img/Filter 24px.svg" alt="" class="product-top-btn__img" />
-        </div>
-        <div class="product-top-filter">
-          <div class="product-top-filter-left">
-            <p class="product-top-filter-left__text">Sort by:</p>
-            <div class="product-top-filter-left-input">
-              <input
-                type="text"
-                placeholder="Latest"
-                class="product-top-filter-left-input-inp"
-              />
+    <div class="overlay">
+      <div class="overlay-modal"></div>
+      <div class="margin1">
+        <div class="margin1-small">
+          <div class="margin1-small-contact">
+            <div class="margin1-small-contact-frame">
               <img
-                src="/img/chevronDown.png "
+                src="/img/Map PinGrey.png"
                 alt=""
-                class="product-top-filter-left-input__img"
+                class="margin1-small-contact-frame__img"
               />
             </div>
-          </div>
-          <div class="product-top-filter-right">
-            <p class="product-top-filter-right__text">
-              <span id="count">0</span> Result Found
+            <p class="margin1-small-contact__text">
+              Store Location: Lincoln- 344, Illinois, Chicago, USA
             </p>
           </div>
-        </div>
-      </div>
-      <div class="product-container">
-        <div class="product-container-dropdown">
-          <div class="product-container-dropdown-container">
-            <div class="product-container-dropdown-container-name">
-              <h1 class="product-container-dropdown-container-name__h">
-                All Categories
-              </h1>
+          <div class="margin1-small-links">
+            <div id="language" class="margin1-small-links-change">
+              <p class="margin1-small-links-change__text">Eng</p>
               <img
-                src="/img/chevronDown.png"
+                src="/img/arrowNavigation.png"
                 alt=""
-                class="product-container-dropdown-container-name__img"
+                class="margin1-small-links-change__img"
               />
             </div>
-            <div class="product-container-dropdown-container-allcateg">
-              <input
-                type="radio"
-                class="product-container-dropdown-container-allcateg__radio"
-                placeholder="132"
+            <div id="price" class="margin1-small-links-change">
+              <p class="margin1-small-links-change__text">USD</p>
+              <img
+                src="/img/arrowNavigation.png"
+                alt=""
+                class="margin1-small-links-change__img"
               />
-              <p class="product-container-dropdown-container-allcateg__name">
-                1241
-              </p>
-              <p class="product-container-dropdown-container-allcateg__count">
-                124
-              </p>
             </div>
-            <div class="product-container-dropdown-container-allcateg">
-              <input
-                type="radio"
-                class="product-container-dropdown-container-allcateg__radio"
-                placeholder="132"
-              />
-              <p class="product-container-dropdown-container-allcateg__name">
-                1241
-              </p>
-              <p class="product-container-dropdown-container-allcateg__count">
-                124
-              </p>
+            <hr />
+            <div class="margin1-small-links-change">
+              <p class="margin1-small-links-change__text">Sign In</p>
+              <span>/</span>
+              <p class="margin1-small-links-change__text">Sign Up</p>
             </div>
           </div>
-          <div class="product-container-dropdown-container"></div>
-          <div class="product-container-dropdown-container"></div>
         </div>
-        <div class="product-container-items">
-          <div class="product-container-items-prod"></div>
-          <div class="product-container-items-pagination"></div>
-        </div>
-      </div>
-    </div>
-    <!--  -->
-    <div class="subscribe">
-      <div class="subscribe-frameleft">
-        <h1 class="subscribe-frameleft__h">Subcribe our Newsletter</h1>
-        <p class="subscribe-frameleft__text">
-          Pellentesque eu nibh eget mauris congue mattis mattis nec <br />
-          tellus. Phasellus imperdiet elit eu magna.
-        </p>
-      </div>
-      <div class="subscribe-frameright">
-        <div class="subscribe-frameright-framemiddle">
-          <input
-            type="email"
-            placeholder="Your email address"
-            class="subscribe-frameright-framemiddle__inp"
-          />
-          <input
-            type="submit"
-            value="Subscribe"
-            class="subscribe-frameright-framemiddle__btn"
-          />
-        </div>
-        <div class="subscribe-frameright-frameright">
-          <div class="subscribe-frameright-frameright__imgf"></div>
-          <div class="subscribe-frameright-frameright__imgt"></div>
-          <div class="subscribe-frameright-frameright__imgp"></div>
-          <div class="subscribe-frameright-frameright__imgi"></div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="footer-fotter">
-        <div class="footer-fotter-company">
-          <div class="footer-fotter-company-frame">
-            <img
-              src="/img/LogoWhite.png"
-              alt=""
-              class="footer-fotter-company-frame__img"
+        <div class="margin1-middle">
+          <div class="margin1-middle-frame">
+            <img src="/img/Logo.png" alt="" class="margin1-middle-frame__img" />
+          </div>
+          <div class="margin1-middle-search">
+            <div class="margin1-middle-search-frame">
+              <img
+                src="/img/SearchBlack.png"
+                alt=""
+                class="margin1-middle-search-frame__img"
+              />
+            </div>
+            <input
+              type="text"
+              class="margin1-middle-search__inp"
+              placeholder="Search"
+            />
+            <input
+              value="Search"
+              type="submit"
+              class="margin1-middle-search__btn"
             />
           </div>
-          <p class="footer-fotter-company__text">
-            Morbi cursus porttitor enim lobortis molestie. <br />
-            Duis gravida turpis dui, eget bibendum magna <br />
-            congue nec.
-          </p>
-          <div class="footer-fotter-company-call">
-            <p class="footer-fotter-company-call__text">(219) 555-0114</p>
-            <span>or</span>
-            <p class="footer-fotter-company-call__text">Proxy@gmail.com</p>
+          <div class="margin1-middle-icons">
+            <div class="margin1-middle-icons-frame">
+              <img
+                src="/img/Heart.png"
+                alt=""
+                class="margin1-middle-icons-frame__img"
+              />
+            </div>
+            <hr />
+            <div class="margin1-middle-icons-shopping">
+              <img
+                src="/img/Bag.png"
+                alt=""
+                class="margin1-middle-icons-shopping__img"
+              />
+              <div class="margin1-middle-icons-shopping-info">
+                <p class="margin1-middle-icons-shopping-info__text">
+                  Shopping cart
+                </p>
+                <p class="margin1-middle-icons-shopping-info__price">$00.00</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="footer-fotter-lists">
-          <div class="footer-fotter-lists-item">
-            <h1 class="footer-fotter-lists-item__h">My Account</h1>
-            <ul class="footer-fotter-lists-item-ul">
-              <li class="footer-fotter-lists-item-ul__li">My Account</li>
-              <li class="footer-fotter-lists-item-ul__li">Order History</li>
-              <li class="footer-fotter-lists-item-ul__li">Shoping Cart</li>
-              <li class="footer-fotter-lists-item-ul__li">Wishlist</li>
-            </ul>
-          </div>
-          <div class="footer-fotter-lists-item">
-            <h1 class="footer-fotter-lists-item__h">Helps</h1>
-            <ul class="footer-fotter-lists-item-ul">
-              <li class="footer-fotter-lists-item-ul__li">Contact</li>
-              <li class="footer-fotter-lists-item-ul__li">Faqs</li>
-              <li class="footer-fotter-lists-item-ul__li">Terms & Condition</li>
-              <li class="footer-fotter-lists-item-ul__li">Privacy Policy</li>
-            </ul>
-          </div>
-          <div class="footer-fotter-lists-item">
-            <h1 class="footer-fotter-lists-item__h">Proxy</h1>
-            <ul class="footer-fotter-lists-item-ul">
-              <li class="footer-fotter-lists-item-ul__li">About</li>
-              <li class="footer-fotter-lists-item-ul__li">Shop</li>
-              <li class="footer-fotter-lists-item-ul__li">Product</li>
-              <li class="footer-fotter-lists-item-ul__li">Track Order</li>
-            </ul>
-          </div>
-          <div class="footer-fotter-lists-item">
-            <h1 class="footer-fotter-lists-item__h">Categories</h1>
-            <ul class="footer-fotter-lists-item-ul">
-              <li class="footer-fotter-lists-item-ul__li">
-                Fruit & Vegetables
+        <div class="margin1-navlinks">
+          <div class="margin1-navlinks-links">
+            <ul class="margin1-navlinks-links-ul">
+              <li class="margin1-navlinks-links-ul-li">
+                Home
+                <div class="margin1-navlinks-links-ul-li__img"></div>
               </li>
-              <li class="footer-fotter-lists-item-ul__li">Meat & Fish</li>
-              <li class="footer-fotter-lists-item-ul__li">Bread & Bakery</li>
-              <li class="footer-fotter-lists-item-ul__li">Beauty & Health</li>
+              <li class="margin1-navlinks-links-ul-li">
+                Shop
+                <div class="margin1-navlinks-links-ul-li__img"></div>
+              </li>
+              <li class="margin1-navlinks-links-ul-li">
+                Pages
+                <div class="margin1-navlinks-links-ul-li__img"></div>
+              </li>
+              <li class="margin1-navlinks-links-ul-li">
+                Blog
+                <div class="margin1-navlinks-links-ul-li__img"></div>
+              </li>
+              <li class="margin1-navlinks-links-ul-li">About Us</li>
+              <li class="margin1-navlinks-links-ul-li">Contact Us</li>
             </ul>
+          </div>
+          <div class="margin1-navlinks-call">
+            <div class="margin1-navlinks-call-frame">
+              <img
+                src="/img/PhoneCall 1.png"
+                alt=""
+                class="margin1-navlinks-call-frame__img"
+              />
+            </div>
+            <p class="margin1-navlinks-call__text">(219) 555-0114</p>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <p class="footer-copyright__text">
-          Ecobazar eCommerce © 2021. All Rights Reserved
-        </p>
-        <div class="footer-copyright-frame">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs-location">
+          <img src="/img/home.png" alt="" class="breadcrumbs-location__img" />
           <img
-            src="/img/Method=ApplePay.png"
+            src="/img/chevronDown.png"
             alt=""
-            class="footer-copyright-frame__img"
+            class="breadcrumbs-location__imgchevron"
           />
+          Categories
           <img
-            src="/img/Method=Visa.png"
+            src="/img/chevronDown.png"
             alt=""
-            class="footer-copyright-frame__img"
+            class="breadcrumbs-location__imgchevron"
           />
-          <img
-            src="/img/Method=Discover.png"
-            alt=""
-            class="footer-copyright-frame__img"
-          />
-          <img
-            src="/img/Method=Mastercard.png"
-            alt=""
-            class="footer-copyright-frame__img"
-          />
-          <img src="/img/Cart.png" alt="" class="footer-copyright-frame__img" />
+          <span>Vegetables</span>
         </div>
       </div>
-    </footer>
+      <div class="product">
+        <div class="product-top">
+          <div class="product-top-btn">
+            <p class="product-top-btn__text">Filter</p>
+            <img
+              src="/img/Filter 24px.svg"
+              alt=""
+              class="product-top-btn__img"
+            />
+          </div>
+          <div class="product-top-filter">
+            <div class="product-top-filter-left">
+              <p class="product-top-filter-left__text">Sort by:</p>
+              <div class="product-top-filter-left-input">
+                <input
+                  type="text"
+                  placeholder="Latest"
+                  class="product-top-filter-left-input-inp"
+                />
+                <img
+                  src="/img/chevronDown.png "
+                  alt=""
+                  class="product-top-filter-left-input__img"
+                />
+              </div>
+            </div>
+            <div class="product-top-filter-right">
+              <p class="product-top-filter-right__text">
+                <span id="count">0</span> Result Found
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product-container-dropdown">
+            <div class="product-container-dropdown-container">
+              <div class="product-container-dropdown-container-name">
+                <h1 class="product-container-dropdown-container-name__h">
+                  All Categories
+                </h1>
+                <img
+                  src="/img/chevronDown.png"
+                  alt=""
+                  class="product-container-dropdown-container-name__img"
+                />
+              </div>
+              <div class="product-container-dropdown-container-allcateg">
+                <input
+                  type="radio"
+                  name="category"
+                  class="product-container-dropdown-container-allcateg__radio"
+                  value="all"
+                />
+                <p class="product-container-dropdown-container-allcateg__name">
+                  All Product
+                </p>
+                <p
+                  class="product-container-dropdown-container-allcateg__countAll"
+                >
+                  <!-- (124) -->
+                </p>
+              </div>
+              <div class="product-container-dropdown-container-allcateg">
+                <input
+                  type="radio"
+                  name="category"
+                  class="product-container-dropdown-container-allcateg__radio"
+                  value="drinks"
+                />
+                <p class="product-container-dropdown-container-allcateg__name">
+                  Water and Drinks
+                </p>
+                <p class="product-container-dropdown-container-allcateg__count">
+                  (124)
+                </p>
+              </div>
+              <div class="product-container-dropdown-container-allcateg">
+                <input
+                  name="category"
+                  type="radio"
+                  class="product-container-dropdown-container-allcateg__radio"
+                  value="fish"
+                />
+                <p class="product-container-dropdown-container-allcateg__name">
+                  Fish
+                </p>
+                <p class="product-container-dropdown-container-allcateg__count">
+                  (124)
+                </p>
+              </div>
+              <div class="product-container-dropdown-container-allcateg">
+                <input
+                  type="radio"
+                  name="category"
+                  class="product-container-dropdown-container-allcateg__radio"
+                  value="fruit"
+                />
+                <p class="product-container-dropdown-container-allcateg__name">
+                  Fresh Fruit
+                </p>
+                <p class="product-container-dropdown-container-allcateg__count">
+                  (124)
+                </p>
+              </div>
+              <div class="product-container-dropdown-container-allcateg">
+                <input
+                  type="radio"
+                  name="category"
+                  class="product-container-dropdown-container-allcateg__radio"
+                  value="meat"
+                />
+                <p class="product-container-dropdown-container-allcateg__name">
+                  Meat
+                </p>
+                <p class="product-container-dropdown-container-allcateg__count">
+                  (124)
+                </p>
+              </div>
+              <div class="product-container-dropdown-container-allcateg">
+                <input
+                  type="radio"
+                  name="category"
+                  class="product-container-dropdown-container-allcateg__radio"
+                  value="snack"
+                />
+                <p class="product-container-dropdown-container-allcateg__name">
+                  Snack
+                </p>
+                <p class="product-container-dropdown-container-allcateg__count">
+                  (124)
+                </p>
+              </div>
+              <div class="product-container-dropdown-container-allcateg">
+                <input
+                  type="radio"
+                  name="category"
+                  class="product-container-dropdown-container-allcateg__radio"
+                  value="vegetables"
+                />
+                <p class="product-container-dropdown-container-allcateg__name">
+                  Vegetables
+                </p>
+                <p class="product-container-dropdown-container-allcateg__count">
+                  (124)
+                </p>
+              </div>
+            </div>
+            <div class="product-container-dropdown-container">
+              <div class="product-container-dropdown-container-name">
+                <h1 class="product-container-dropdown-container-name__h">
+                  Price
+                </h1>
+                <img
+                  src="/img/chevronDown.png"
+                  alt=""
+                  class="product-container-dropdown-container-name__img"
+                />
+              </div>
+              <div class="product-container-dropdown-container-ranger">
+                <div class="product-container-dropdown-container-ranger-slider">
+                  <div
+                    class="product-container-dropdown-container-ranger-slider-progress"
+                  ></div>
+                  <div
+                    class="product-container-dropdown-container-ranger-slider-input"
+                  >
+                    <input
+                      type="range"
+                      class="product-container-dropdown-container-ranger-slider-input-min"
+                      min="0"
+                      max="350"
+                      value="40.99"
+                      step="0.099"
+                    />
+                    <input
+                      type="range"
+                      class="product-container-dropdown-container-ranger-slider-input-max"
+                      min="0"
+                      max="350"
+                      value="300.99"
+                      step="0.0999"
+                    />
+                  </div>
+                </div>
+                <div class="product-container-dropdown-container-ranger-range">
+                  <p
+                    class="product-container-dropdown-container-ranger-range__text"
+                  >
+                    Price: <span id="min">0</span> <span>-</span>
+                    <span id="max">350</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="product-container-dropdown-container"></div>
+          </div>
+          <div class="product-container-items">
+            <div class="product-container-items-prod"></div>
+            <div class="product-container-items-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="subscribe">
+        <div class="subscribe-frameleft">
+          <h1 class="subscribe-frameleft__h">Subcribe our Newsletter</h1>
+          <p class="subscribe-frameleft__text">
+            Pellentesque eu nibh eget mauris congue mattis mattis nec <br />
+            tellus. Phasellus imperdiet elit eu magna.
+          </p>
+        </div>
+        <div class="subscribe-frameright">
+          <div class="subscribe-frameright-framemiddle">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="subscribe-frameright-framemiddle__inp"
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              class="subscribe-frameright-framemiddle__btn"
+            />
+          </div>
+          <div class="subscribe-frameright-frameright">
+            <div class="subscribe-frameright-frameright__imgf"></div>
+            <div class="subscribe-frameright-frameright__imgt"></div>
+            <div class="subscribe-frameright-frameright__imgp"></div>
+            <div class="subscribe-frameright-frameright__imgi"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-fotter">
+          <div class="footer-fotter-company">
+            <div class="footer-fotter-company-frame">
+              <img
+                src="/img/LogoWhite.png"
+                alt=""
+                class="footer-fotter-company-frame__img"
+              />
+            </div>
+            <p class="footer-fotter-company__text">
+              Morbi cursus porttitor enim lobortis molestie. <br />
+              Duis gravida turpis dui, eget bibendum magna <br />
+              congue nec.
+            </p>
+            <div class="footer-fotter-company-call">
+              <p class="footer-fotter-company-call__text">(219) 555-0114</p>
+              <span>or</span>
+              <p class="footer-fotter-company-call__text">Proxy@gmail.com</p>
+            </div>
+          </div>
+          <div class="footer-fotter-lists">
+            <div class="footer-fotter-lists-item">
+              <h1 class="footer-fotter-lists-item__h">My Account</h1>
+              <ul class="footer-fotter-lists-item-ul">
+                <li class="footer-fotter-lists-item-ul__li">My Account</li>
+                <li class="footer-fotter-lists-item-ul__li">Order History</li>
+                <li class="footer-fotter-lists-item-ul__li">Shoping Cart</li>
+                <li class="footer-fotter-lists-item-ul__li">Wishlist</li>
+              </ul>
+            </div>
+            <div class="footer-fotter-lists-item">
+              <h1 class="footer-fotter-lists-item__h">Helps</h1>
+              <ul class="footer-fotter-lists-item-ul">
+                <li class="footer-fotter-lists-item-ul__li">Contact</li>
+                <li class="footer-fotter-lists-item-ul__li">Faqs</li>
+                <li class="footer-fotter-lists-item-ul__li">
+                  Terms & Condition
+                </li>
+                <li class="footer-fotter-lists-item-ul__li">Privacy Policy</li>
+              </ul>
+            </div>
+            <div class="footer-fotter-lists-item">
+              <h1 class="footer-fotter-lists-item__h">Proxy</h1>
+              <ul class="footer-fotter-lists-item-ul">
+                <li class="footer-fotter-lists-item-ul__li">About</li>
+                <li class="footer-fotter-lists-item-ul__li">Shop</li>
+                <li class="footer-fotter-lists-item-ul__li">Product</li>
+                <li class="footer-fotter-lists-item-ul__li">Track Order</li>
+              </ul>
+            </div>
+            <div class="footer-fotter-lists-item">
+              <h1 class="footer-fotter-lists-item__h">Categories</h1>
+              <ul class="footer-fotter-lists-item-ul">
+                <li class="footer-fotter-lists-item-ul__li">
+                  Fruit & Vegetables
+                </li>
+                <li class="footer-fotter-lists-item-ul__li">Meat & Fish</li>
+                <li class="footer-fotter-lists-item-ul__li">Bread & Bakery</li>
+                <li class="footer-fotter-lists-item-ul__li">Beauty & Health</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="footer-copyright__text">
+            Ecobazar eCommerce © 2021. All Rights Reserved
+          </p>
+          <div class="footer-copyright-frame">
+            <img
+              src="/img/Method=ApplePay.png"
+              alt=""
+              class="footer-copyright-frame__img"
+            />
+            <img
+              src="/img/Method=Visa.png"
+              alt=""
+              class="footer-copyright-frame__img"
+            />
+            <img
+              src="/img/Method=Discover.png"
+              alt=""
+              class="footer-copyright-frame__img"
+            />
+            <img
+              src="/img/Method=Mastercard.png"
+              alt=""
+              class="footer-copyright-frame__img"
+            />
+            <img
+              src="/img/Cart.png"
+              alt=""
+              class="footer-copyright-frame__img"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

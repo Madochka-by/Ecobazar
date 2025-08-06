@@ -44,6 +44,7 @@ body {
   cursor: pointer;
 }
 .header-bot {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   width: 100%;
@@ -58,6 +59,37 @@ body {
   gap: 20px;
   align-items: center;
   justify-content: space-between;
+}
+.header-bot-frame-left-dropdown {
+  width: 300px;
+  background: white;
+  border: 1px solid #00b207;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  h1 {
+    border-bottom: 1px solid #00b207;
+    line-height: 150%;
+    font-size: 32px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    li {
+      opacity: 0.5;
+    }
+    li:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      color: #00b207;
+    }
+  }
 }
 .header-bot-frame-left-item {
   cursor: pointer;
