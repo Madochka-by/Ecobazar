@@ -15,6 +15,9 @@ filterBtn.addEventListener("click", () => {
     if (window.innerWidth <= 800) {
       productCardGrid.style.gridTemplateColumns = "repeat(3, 1fr)";
     }
+    if (window.innerWidth <= 708) {
+      productCardGrid.style.gridTemplateColumns = "repeat(1, 1fr)";
+    }
     filterMenu.style.display = "flex";
     click++;
   } else {
@@ -27,6 +30,9 @@ filterBtn.addEventListener("click", () => {
     }
     if (window.innerWidth <= 1030) {
       productCardGrid.style.gridTemplateColumns = "repeat(3, 1fr)";
+    }
+    if (window.innerWidth <= 708) {
+      productCardGrid.style.gridTemplateColumns = "repeat(1, 1fr)";
     }
     click = 0;
   }

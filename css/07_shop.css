@@ -873,6 +873,300 @@ body {
     font-size: 10px;
   }
 }
+@media (max-width: 540px) {
+  .margin1 {
+    .margin1-small {
+      padding: 10px 4vw;
+      font-size: 8px;
+    }
+    .margin1-middle {
+      padding: 10px 4vw;
+      .margin1-middle-icons {
+        display: none;
+      }
+      .margin1-middle-frame__img {
+        width: 70%;
+      }
+    }
+    .margin1-navlinks {
+      padding: 10px 4vw;
+    }
+    & .margin1-middle {
+      .margin1-middle-search__btn {
+        height: 30px;
+        width: 98px;
+      }
+      .margin1-middle-search__inp {
+        width: 300px;
+        height: 30px;
+      }
+    }
+    & .margin1-navlinks {
+      .margin1-navlinks-links-tripoloski img {
+        width: 30px;
+        height: 30px;
+        display: flex;
+      }
+      .margin1-navlinks-links-ul {
+        display: none;
+      }
+    }
+  }
+  .breadcrumbs {
+    padding: 20px 8vw;
+  }
+  .product {
+    padding: 0 4vw;
+    & .product-top {
+      display: flex;
+      gap: 40px;
+      width: 100%;
+      & .product-top-filter {
+        gap: 20px;
+        padding-left: 0vw;
+      }
+    }
+    & .product-container {
+      display: block;
+      .product-container-items-prod-card {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+      }
+      .product-container-items-prod-card-frame__img {
+        width: 50%;
+      }
+
+      .product-container-dropdown {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .product-container-dropdown-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .product-container-dropdown-container-name {
+          grid-column: 1/3;
+          justify-content: space-between;
+        }
+        .product-container-dropdown-container-ranger {
+          margin-left: 80px;
+        }
+      }
+      .product-container-items {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .subscribe {
+    padding: 25px 4vw;
+    flex-direction: column;
+    gap: 20px;
+    .subscribe-frameright-framemiddle__inp {
+      width: 336px;
+      font-size: 10px;
+      height: 34px;
+    }
+    .subscribe-frameright-framemiddle__btn {
+      height: 34px;
+      width: 70px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 8px;
+    }
+    .subscribe-frameleft {
+      /* flex-direction: column; */
+      align-items: center;
+      text-align: center;
+    }
+    .subscribe-frameright {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    padding: 0 4vw;
+    font-size: 8px;
+    .footer-fotter-company-frame__img {
+      width: 70%;
+    }
+    & .footer-fotter-lists {
+      h1 {
+        font-size: 10px;
+      }
+    }
+    & .footer-copyright {
+      img {
+        width: 32px;
+        height: 22px;
+      }
+    }
+  }
+}
+@media (max-width: 426px) {
+  .margin1 {
+    .margin1-small {
+      width: 100%;
+      font-size: 8px;
+      justify-content: flex-end;
+      .margin1-small-contact {
+        display: none;
+      }
+    }
+    .margin1-middle {
+      padding: 10px 4vw;
+      .margin1-middle-icons {
+        display: none;
+      }
+      .margin1-middle-frame__img {
+        width: 70%;
+      }
+    }
+
+    .margin1-navlinks {
+      padding: 10px 4vw;
+    }
+    & .margin1-middle {
+      .margin1-middle-search__btn {
+        height: 30px;
+        width: 58px;
+        font-size: 8px;
+      }
+      .margin1-middle-search__inp {
+        width: 200px;
+        height: 30px;
+        padding-right: 75px;
+      }
+    }
+    & .margin1-navlinks {
+      .margin1-navlinks-links-tripoloski img {
+        width: 30px;
+        height: 30px;
+        display: flex;
+      }
+      .margin1-navlinks-links-ul {
+        display: none;
+      }
+    }
+  }
+  .breadcrumbs {
+    padding: 20px 8vw;
+  }
+  .product {
+    padding: 0 4vw;
+    & .product-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      & .product-top-filter {
+        gap: 20px;
+        padding-left: 0vw;
+      }
+      & .product-top-btn {
+        width: 300px;
+        height: 30px;
+        font-size: 10px;
+      }
+      .product-top-filter-left-input {
+        img {
+          top: 2px;
+        }
+      }
+      .product-top-filter-left-input-inp {
+        height: 20px;
+      }
+      .product-top-filter-left {
+        font-size: 10px;
+      }
+      .product-top-filter-right {
+        font-size: 10px;
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+    & .product-container {
+      display: block;
+      .product-container-items-prod-card {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+      }
+      .product-container-items-prod-card-frame__img {
+        width: 50%;
+      }
+
+      .product-container-dropdown {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .product-container-dropdown-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .product-container-dropdown-container-name {
+          grid-column: 1/3;
+          justify-content: space-between;
+        }
+        .product-container-dropdown-container-ranger {
+          margin-left: 80px;
+        }
+      }
+      .product-container-items {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .subscribe {
+    padding: 25px 4vw;
+    flex-direction: column;
+    gap: 20px;
+    .subscribe-frameright-framemiddle__inp {
+      width: 336px;
+      font-size: 10px;
+      height: 34px;
+    }
+    .subscribe-frameright-framemiddle__btn {
+      height: 34px;
+      width: 70px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 8px;
+    }
+    .subscribe-frameleft {
+      /* flex-direction: column; */
+      align-items: center;
+      text-align: center;
+    }
+    .subscribe-frameright {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    padding: 0 4vw;
+    font-size: 6px;
+    .footer-fotter-company-frame__img {
+      width: 50%;
+    }
+    & .footer-fotter-lists {
+      padding-left: 0px;
+      align-items: center;
+      gap: 20px;
+      h1 {
+        font-size: 6px;
+      }
+    }
+    & .footer-copyright {
+      img {
+        width: 32px;
+        height: 22px;
+      }
+    }
+  }
+}
 /* @media (max-width: 1440px) {
   .product {
     .product-top {
