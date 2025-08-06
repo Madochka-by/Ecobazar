@@ -231,13 +231,3 @@ itemForDropDown.forEach((Element, index) => {
     dropDown.style.display = "none";
   });
 });
-
-const listHrefCategories = document.querySelectorAll(
-  ".header-bot-frame-left-dropdown-items-ul-list"
-);
-
-listHrefCategories.forEach((Element) => {
-  Element.addEventListener("click", () => {
-    console.log(Element.textContent);
-  });
-});

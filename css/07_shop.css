@@ -134,6 +134,13 @@ body {
       align-items: center;
       justify-content: center;
     }
+    .margin1-navlinks-links-tripoloski {
+      img {
+        display: none;
+        width: 20px;
+        height: 20px;
+      }
+    }
     .margin1-navlinks-links-ul {
       display: flex;
       align-items: center;
@@ -679,7 +686,193 @@ body {
     gap: 5px;
   }
 }
-
+@media (max-width: 1800px) {
+  .product {
+    & .product-top {
+      & .product-top-filter {
+        padding-left: 13.5vw;
+      }
+    }
+  }
+}
+@media (max-width: 1700px) {
+  .product {
+    & .product-top {
+      & .product-top-filter {
+        padding-left: 14vw;
+      }
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .product {
+    & .product-top {
+      & .product-top-filter {
+        padding-left: 16vw;
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .footer {
+    .footer-fotter-lists {
+      gap: 2vw;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .margin1 {
+    .margin1-small {
+      padding: 10px 8vw;
+    }
+    .margin1-middle {
+      padding: 10px 8vw;
+    }
+    .margin1-navlinks {
+      padding: 10px 8vw;
+    }
+    & .margin1-middle {
+      .margin1-middle-search__btn {
+        height: 30px;
+        width: 98px;
+      }
+      .margin1-middle-search__inp {
+        width: 300px;
+        height: 30px;
+      }
+    }
+  }
+  .breadcrumbs {
+    padding: 50px 8vw;
+  }
+  .product {
+    padding: 0 8vw;
+    & .product-top {
+      display: flex;
+      gap: 150px;
+      width: 100%;
+      justify-content: space-between;
+      & .product-top-filter {
+        padding-left: 0vw;
+      }
+    }
+    & .product-container {
+      display: block;
+      .product-container-items-prod-card {
+        width: 200px;
+        align-items: center;
+      }
+      .product-container-dropdown {
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .product-container-dropdown-container {
+        display: flex;
+      }
+      .product-container-items {
+        justify-content: center;
+        align-items: center;
+      }
+      .product-container-items-prod-card-frame__img {
+        border-radius: 10px;
+      }
+      .product-container-items-prod-card-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .product-container-items-prod-card-info-left {
+        align-items: center;
+        justify-content: center;
+      }
+      .product-container-items-prod-card-info-right {
+        justify-content: center;
+      }
+    }
+  }
+  .subscribe {
+    padding: 25px 8vw;
+    .subscribe-frameright-framemiddle__inp {
+      width: 336px;
+    }
+    .subscribe-frameright-framemiddle__btn {
+      height: 54px;
+      width: 100px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .margin1 {
+    .margin1-small {
+      padding: 10px 4vw;
+    }
+    .margin1-middle {
+      padding: 10px 4vw;
+    }
+    .margin1-navlinks {
+      padding: 10px 4vw;
+    }
+    & .margin1-middle {
+      .margin1-middle-search__btn {
+        height: 30px;
+        width: 98px;
+      }
+      .margin1-middle-search__inp {
+        width: 300px;
+        height: 30px;
+      }
+    }
+    & .margin1-navlinks {
+      .margin1-navlinks-links-tripoloski img {
+        width: 30px;
+        height: 30px;
+        display: flex;
+      }
+      .margin1-navlinks-links-ul {
+        display: none;
+      }
+    }
+  }
+  .breadcrumbs {
+    padding: 20px 8vw;
+  }
+  .product {
+    padding: 0 4vw;
+    & .product-top {
+      display: flex;
+      gap: 150px;
+      width: 100%;
+      justify-content: space-between;
+      & .product-top-filter {
+        padding-left: 0vw;
+      }
+    }
+  }
+  .subscribe {
+    padding: 25px 4vw;
+    .subscribe-frameright-framemiddle__inp {
+      width: 336px;
+    }
+    .subscribe-frameright-framemiddle__btn {
+      height: 54px;
+      width: 100px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+  .footer {
+    padding: 0 4vw;
+    font-size: 10px;
+  }
+}
 /* @media (max-width: 1440px) {
   .product {
     .product-top {
