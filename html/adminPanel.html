@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/adminPanel.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <title>adminPanel</title>
+    <script src="/js/adminPanel.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="header__text">Choose category:</h1>
+      <ul class="header-ul">
+        <li data-index="category" id="all" class="header-ul__list lic">
+          All products
+        </li>
+        <li data-index="category" id="fruit" class="header-ul__list lic">
+          Fruit
+        </li>
+        <li data-index="category" id="vegetables" class="header-ul__list lic">
+          Vegetables
+        </li>
+        <li data-index="category" id="fish" class="header-ul__list lic">
+          Fish
+        </li>
+        <li data-index="category" id="meat" class="header-ul__list lic">
+          Meat
+        </li>
+        <li data-index="category" id="snack" class="header-ul__list lic">
+          Snack
+        </li>
+        <li data-index="category" id="drinks" class="header-ul__list lic">
+          Drinks
+        </li>
+      </ul>
+    </div>
+    <div class="actions">
+      <p class="actions__text">Сhoose action:</p>
+      <ul class="actions-ul">
+        <li data-index="action" id="add" class="actions-ul__list lia">
+          Add product
+        </li>
+        <li data-index="action" id="change" class="actions-ul__list lia">
+          Change product
+        </li>
+        <li data-index="action" id="delete" class="actions-ul__list lia">
+          Delete product
+        </li>
+      </ul>
+    </div>
+    <form class="ad" id="addForm">
+      <div class="ad-frame">
+        <select class="ad-frame__inp" required>
+          <option value="" disabled selected hidden>Select category</option>
+          <option value="drinks">drinks</option>
+          <option value="meat">meat</option>
+          <option value="vegetables">vegetables</option>
+          <option value="snack">snack</option>
+          <option value="fruit">fruit</option>
+          <option value="fish">fish</option>
+        </select>
+        <label class="ad-frame__lbl">Category</label>
+      </div>
+      <div class="ad-frame">
+        <input
+          type="text"
+          class="ad-frame__inp"
+          placeholder="Enter pass of image"
+          value="/img/"
+          required
+        />
+        <label class="ad-frame__lbl" for="">Image</label>
+      </div>
+      <div class="ad-frame">
+        <input
+          type="text"
+          class="ad-frame__inp"
+          placeholder="Enter name"
+          required
+        />
+        <label class="ad-frame__lbl" for="">Name</label>
+      </div>
+      <div class="ad-frame">
+        <input
+          type="number"
+          class="ad-frame__inp"
+          placeholder="Enter price"
+          required
+        />
+        <label class="ad-frame__lbl" for="">Price</label>
+      </div>
+      <div class="ad-frame">
+        <input
+          type="checkbox"
+          class="ad-frame__inp"
+          placeholder="Enter pass off image"
+        />
+        <label class="ad-frame__lbl" for="">sale/not sale</label>
+      </div>
+      <div class="ad-frame">
+        <input
+          type="checkbox"
+          class="ad-frame__inp"
+          placeholder="Enter pass off image"
+        />
+        <label class="ad-frame__lbl" for="">stock/out stock</label>
+      </div>
+      <div class="ad-frame">
+        <input
+          id="actionBtnAdd"
+          class="ad-frame__inp add"
+          type="submit"
+          value="add"
+        />
+      </div>
+      <p class="ad__loading"></p>
+    </form>
+    <div class="info">
+      <div class="info__text">id</div>
+      <div class="info__text">image</div>
+      <div class="info__text">name</div>
+      <div class="info__text">price</div>
+      <div class="info__text">rating</div>
+      <div class="info__text">sale/not sale</div>
+      <div class="info__text">stock/out stock</div>
+      <div class="info__text">Action</div>
+    </div>
+    <div class="product"></div>
+  </body>
+</html>
+
+<!-- <div class="product-item-frame-Confirmation">
+            <button
+              id="confirm"
+              class="product-item-frame-Confirmation-btn confirm"
+            >
+              ✓
+            </button>
+            <button
+              id="reject"
+              class="product-item-frame-Confirmation-btn reject"
+            >
+              ✖
+            </button>
+          </div> -->
